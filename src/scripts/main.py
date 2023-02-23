@@ -65,7 +65,7 @@ from haystack.pipelines import DocumentSearchPipeline
 pipe = DocumentSearchPipeline(retriever=retriever)
 
 ## Voilà! Ask a question!
-prediction = pipe.run(query="Who is the father of Arya Stark?", top_k_retriever=10)
+prediction = pipe.run(query="Who is the father of Arya Stark?")
 print(prediction)
 # Returns list of docs
 
